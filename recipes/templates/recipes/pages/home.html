@@ -1,17 +1,16 @@
 {% include 'recipes/partials/head.html' %}
 
 <body>
-    <header class="main-header-container">
-        <div class="main-header container">
-            <h1>
-                <a href="/">
-                    <i class="fa-solid fa-face-smile"></i>
-                    <span>Recipes {{ name }}</span>
-                </a>
-            </h1>
+
+    {% include 'recipes/partials/header.html' %}
+
+    <div class="search-container">
+        <div class="container">
+            <form action="">
+                <input type="search" class="search-iput" name="search">
+                <button type="submit">Enviar</button>
+            </form>
         </div>
-    </header>
-
+    </div>
 </body>
-
 </html>
