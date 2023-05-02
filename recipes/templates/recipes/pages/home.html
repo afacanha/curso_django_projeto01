@@ -1,16 +1,15 @@
 {% include 'recipes/partials/head.html' %}
 
 <body>
-
     {% include 'recipes/partials/header.html' %}
+    {% include 'recipes/partials/search.html' %}
 
-    <div class="search-container">
-        <div class="container">
-            <form action="">
-                <input type="search" class="search-iput" name="search">
-                <button type="submit">Enviar</button>
-            </form>
+    <main class="main-content-container">
+        <div class="main-content main-content-list container">
+         {% include 'recipes/partials/recipe.html' %}
+
         </div>
-    </div>
+    </main>
+    {% include 'recipes/partials/footer.html' %}
 </body>
 </html>
